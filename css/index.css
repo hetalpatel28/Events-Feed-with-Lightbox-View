@@ -1,0 +1,178 @@
+
+body {
+    margin: 0;
+    padding: 0;    
+}
+.body-wrapper {
+	width: 100%;
+	color: #000;
+    font-family: "Open Sans",Helvetica,sans-serif;
+    font-size: 1em;
+}
+.container{
+	width: 960px;
+	margin:0 auto;
+	padding: 0;
+}
+#event-list {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.event-item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding:0;    
+    width: 33.33%;
+    min-width: 290px;
+    color: #333;
+    word-wrap: break-word;
+}
+.event-header{
+	padding: 20px 5px;
+	text-align: center;
+	font-size: 28px;
+	color:#000;
+}
+.event-box {
+	margin: 20px 8px;
+	padding: 20px 10px;
+	border: 1px solid #ccc;
+}
+.event-item-wrap {
+    background: #f00;
+    margin: 5px auto;
+    padding: 10px 0px;
+    max-width:180px;
+    min-width: 110px;
+    width: 60%;
+    text-transform: uppercase;
+}
+.event-item-date {
+    color: #fff;
+    font-size: 3em;
+}
+.event-item-month, .event-item-time {
+    color: #fff;
+    font-size: 1em;
+    line-height: 2em;    
+}
+.event-item-storename {
+    color: #000;
+    font-size: 1.1em; 
+    margin: 25px 0 10px 0;
+}
+.event-item-floor, .event-item-street {
+	color: #666;
+	font-size: 0.8em;
+	margin: 5px 0 0 0; 
+}
+.event-item-address { 
+    margin: 5px 0 0 0;  
+}
+.event-item-desc {
+    font-size: 0.9em;
+    margin: 10px 0;
+    text-align: left;
+}
+.event-item-rsvp {
+    margin: 20px 0 0;
+}
+.app-button {
+	background: #555;
+	border: 1px solid #555;
+    line-height: 2.5;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.4s ease-in 0s;
+    margin: 10px auto;
+    padding: 4px 0;
+    max-width:180px;
+    min-width: 110px;
+    width: 60%;
+    font-size: 0.7em;
+    font-weight:600;
+    cursor: pointer;
+}
+.app-button:hover {
+	background: #aaa;
+}
+
+/* css for popup / Modal */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 60px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: #000; /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+   	font-family: "Open Sans",Helvetica,sans-serif;
+    font-size: 1em;
+}
+.modal-content {
+	position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #333;
+    width: 65%;
+    min-height: 100px;
+    z-index: 999;
+}
+.close {
+    color: #555;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 2.5em;
+}
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+#modalBody .event-item {
+	width: 100%;
+    text-align: center;
+}
+/* css for medium device */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	.container{
+		width: 100%;
+	}
+	.event-item {
+		width: 50%;
+	}
+}
+/* css for small(tablet) device */
+@media only screen and (max-width : 768px) {
+	.container{
+		width: 100%;
+	}
+	.event-box {
+		margin: 20px;
+	}
+	.event-item {
+		width: 100%;
+	}
+	.modal-content {
+	    width: 65%;
+	}
+}
+/* css for X-small (mobile) device */
+@media only screen  and (max-width : 420px) {
+	.container{
+		width: 100%;
+	}
+	.event-item {
+		width: 100%;
+	}
+}
